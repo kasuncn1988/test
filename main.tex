@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Define new column types
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+
+\begin{table}[h!]
+\centering
+\caption{Thermal Properties of Different Layers in the Slab Model}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{L{1.5cm} L{2cm} C{1cm} C{2cm} C{2cm} C{2cm} C{2cm}}
+\toprule
+\textbf{Layer No.} & \textbf{Material} & \textbf{Thickness (m)} & \textbf{Thermal Conductivity (W/mK)} & \textbf{Specific Heat (J/kgK)} & \textbf{Density (kg/m³)} & \textbf{R-value (m²K/W)} \\ \midrule
+Layer 01 & Cement Mortar & 0.01 & 2.23 & 600 & 2100 & 0.0045 \\
+Layer 02 & Insulation Layer & 0.03 & 0.191 & 320 & 450 & 0.1571 \\
+Layer 03 & Cement Mortar & 0.01 & 2.23 & 600 & 2100 & 0.0045 \\
+Layer 04 & Dense Concrete & 0.05 & 1.7 & 840 & 2200 & 0.0294 \\ \midrule
+\multicolumn{6}{c}{\textbf{Total}} & \textbf{0.1954} \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+
+\end{document}
